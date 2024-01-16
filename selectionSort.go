@@ -16,8 +16,10 @@ func SelectionSort(arr []int) {
 			}
 		}
 
-		// Swap the found minimum element with the first element
-		arr[i], arr[minIndex] = arr[minIndex], arr[i]
+		if minIndex != i{
+			// Swap the found minimum element with the first element
+			arr[i], arr[minIndex] = arr[minIndex], arr[i]
+		}
 	}
 }
 
